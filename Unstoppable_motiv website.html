@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNSTOPPABLE MOTIV - Digital Products for Success</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        @keyframes pulse-glow {
+            0% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(255, 215, 0, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0); }
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        @keyframes textGlow {
+            0% { text-shadow: 0 0 5px rgba(255, 215, 0, 0.5); }
+            50% { text-shadow: 0 0 15px rgba(255, 215, 0, 0.8); }
+            100% { text-shadow: 0 0 5px rgba(255, 215, 0, 0.5); }
+        }
+        .pulse-glow {
+            animation: pulse-glow 2s infinite;
+        }
+        .float-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+        .text-glow {
+            animation: textGlow 2s ease-in-out infinite;
+        }
+        .bg-gradient-dark {
+            background: linear-gradient(135deg, #111 0%, #333 100%);
+        }
+        .font-bebas {
+            font-family: 'Bebas Neue', sans-serif;
+        }
+        .font-montserrat {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(255, 215, 0, 0.3);
+        }
+        .typewriter {
+            overflow: hidden;
+            border-right: .15em solid gold;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em;
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: gold; }
+        }
+    </style>
+</head>
+<body class="bg-black text-gray-200 font-montserrat">
+    <!-- Navigation -->
+    <nav class="bg-gray-900 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <div class="text-gold-500 mr-2">
+                        <i class="fas fa-fire text-yellow-500 text-2xl"></i>
+                    </div>
+                    <a href="#" class="text-2xl font-bold text-white font-bebas tracking-wider">UNSTOPPABLE MOTIV</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-300 hover:text-yellow-500 transition duration-300">Home</a>
+                    <a href="#products" class="text-gray-300 hover:text-yellow-500 transition duration-300">Products</a>
+                    <a href="#testimonials" class="text-gray-300 hover:text-yellow-500 transition duration-300">Success Stories</a>
+                    <a href="#about" class="text-gray-300 hover:text-yellow-500 transition duration-300">About</a>
+                    <a href="#contact" class="text-gray-300 hover:text-yellow-500 transition duration-300">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-300 hover:text-yellow-500 focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-gradient-dark py-20 md:py-32 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+            <div class="absolute inset-0 bg-black"></div>
+            <div class="absolute top-0 left-0 w-full h-full bg-repeat" style="background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjMzMzIj48L3JlY3Q+CjxwYXRoIGQ9Ik0wIDVMNSAwWk02IDRMNCA2Wk0tMSAxTDEgLTFaIiBzdHJva2U9IiMxMTEiIHN0cm9rZS13aWR0aD0iMSI+PC9wYXRoPgo8L3N2Zz4=');"></div>
+        </div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6 text-yellow-500 font-bebas tracking-wide">
+                        <span class="typewriter">BECOME UNSTOPPABLE</span>
+                    </h1>
+                    <p class="text-xl mb-8 text-gray-300 leading-relaxed">
+                        Transform your mindset, build unshakable discipline, and achieve financial freedom with our premium digital products.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#products" class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105 text-center pulse-glow">
+                            SHOP NOW <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                        <a href="#about" class="border-2 border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-black font-bold py-3 px-6 rounded-lg transition duration-300 text-center">
+                            LEARN MORE
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center mt-12 md:mt-200">
+                    <div class="relative float-animation">
+                        <div class="absolute -inset-4 bg-yellow-500 rounded-full opacity-20 blur-lg"></div>
+                        <img src="https://images.unsplash.com/photo-1542621334-a254cf47733d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Motivational Image" class="rounded-lg shadow-2xl w-full max-w-md border-2 border-yellow-500">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-gray-900 py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="p-4">
+                    <div class="text-4xl font-bold text-yellow-500 mb-2">10K+</div>
+                    <div class="text-gray-400">Customers Transformed</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl font-bold text-yellow-500 mb-2">50+</div>
+                    <div class="text-gray-400">Premium Products</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl font-bold text-yellow-500 mb-2">98%</div>
+                    <div class="text-gray-400">Success Rate</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl font-bold text-yellow-500 mb-2">24/7</div>
+                    <div class="text-gray-400">Support Available</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-yellow-500 mb-4 font-bebas tracking-wide">OUR PREMIUM PRODUCTS</h2>
+                <div class="w-24 h-1 bg-yellow-500 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+                    Digital tools to fuel your journey to success. Instant access after purchase.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg product-card transition duration-500">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Product 1" class="w-full h-48 object-cover">
+                        <div class="absolute top-4 right-4 bg-yellow-500 text-black font-bold px-3 py-1 rounded-full text-sm">
+                            BESTSELLER
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-yellow-500 mb-2">The Discipline Blueprint</h3>
+                        <p class="text-gray-400 mb-4">Master self-control and build habits that last with this comprehensive guide.</p>
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-500">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-500 ml-2">(1,234 reviews)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-yellow-500">$49.99</span>
+                            <button class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-4 rounded transition duration-300">
+                                ADD TO CART <i class="fas fa-shopping-cart ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg product-card transition duration-500">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Product 2" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-yellow-500 mb-2">Financial Freedom Formula</h3>
+                        <p class="text-gray-400 mb-4">Step-by-step system to escape the 9-5 and build sustainable wealth.</p>
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-500">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="text-gray-500 ml-2">(876 reviews)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-yellow-500">$79.99</span>
+                            <button class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-4 rounded transition duration-300">
+                                ADD TO CART <i class="fas fa-shopping-cart ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg product-card transition duration-500">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Product 3" class="w-full h-48 object-cover">
+                        <div class="absolute top-4 right-4 bg-red-500 text-white font-bold px-3 py-1 rounded-full text-sm">
+                            NEW
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-yellow-500 mb-2">Consistency Masterclass</h3>
+                        <p class="text-gray-400 mb-4">Learn how to stay consistent when motivation fades - the key to long-term success.</p>
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-500">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="text-gray-500 ml-2">(342 reviews)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-yellow-500">$59.99</span>
+                            <button class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-4 rounded transition duration-300">
+                                ADD TO CART <i class="fas fa-shopping-cart ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block border-2 border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-black font-bold py-3 px-8 rounded-lg transition duration-300">
+                    VIEW ALL PRODUCTS <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-yellow-500 mb-4 font-bebas tracking-wide">SUCCESS STORIES</h2>
+                <div class="w-24 h-1 bg-yellow-500 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+                    Hear from people who transformed their lives with our products
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-500">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6 italic">
+                        "The Discipline Blueprint completely changed my life. I went from struggling to get out of bed to running a 6-figure business in 12 months. Worth every penny!"
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User" class="w-12 h-12 rounded-full border-2 border-yellow-500">
+                        <div class="ml-4">
+                            <h4 class="font-bold text-yellow-500">Michael R.</h4>
+                            <p class="text-gray-500 text-sm">Entrepreneur</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-500">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6 italic">
+                        "I was stuck in a dead-end job until I found the Financial Freedom Formula. Now I'm location independent and making more money than I ever thought possible."
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User" class="w-12 h-12 rounded-full border-2 border-yellow-500">
+                        <div class="ml-4">
+                            <h4 class="font-bold text-yellow-500">Sarah L.</h4>
+                            <p class="text-gray-500 text-sm">Digital Nomad</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-500">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6 italic">
+                        "The Consistency Masterclass gave me the tools to finally stick with my goals. I've lost 40lbs, doubled my income, and rebuilt my confidence. Life-changing!"
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="User" class="w-12 h-12 rounded-full border-2 border-yellow-500">
+                        <div class="ml-4">
+                            <h4 class="font-bold text-yellow-500">David T.</h4>
+                            <p class="text-gray-500 text-sm">Fitness Coach</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="About Us" class="rounded-lg shadow-xl w-full max-w-md border-2 border-yellow-500">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-yellow-500 mb-6 font-bebas tracking-wide">ABOUT UNSTOPPABLE MOTIV</h2>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Founded in 2018, UNSTOPPABLE MOTIV was born from a simple idea: everyone deserves the tools to unlock their full potential. We believe success isn't about luck or talent - it's about mindset, discipline, and consistent action.
+                    </p>
+                    <p class="text-gray-300 mb-8 leading-relaxed">
+                        Our team of psychologists, entrepreneurs, and peak performance experts have distilled decades of research into practical, actionable digital products that deliver real results. We've helped over 10,000 clients transform their lives, and we're just getting started.
+                    </p>
+                    <div class="flex space-x-4">
+                        <div class="bg-gray-900 p-4 rounded-lg text-center flex-1">
+                            <div class="text-yellow-500 text-3xl mb-2">
+                                <i class="fas fa-bullseye"></i>
+                            </div>
+                            <h3 class="font-bold text-yellow-500 mb-1">Mission</h3>
+                            <p class="text-gray-400 text-sm">Empower people to achieve extraordinary results through mindset mastery</p>
+                        </div>
+                        <div class="bg-gray-900 p-4 rounded-lg text-center flex-1">
+                            <div class="text-yellow-500 text-3xl mb-2">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <h3 class="font-bold text-yellow-500 mb-1">Vision</h3>
+                            <p class="text-gray-400 text-sm">A world where everyone operates at their highest potential</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-dark relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+            <div class="absolute inset-0 bg-black"></div>
+            <div class="absolute top-0 left-0 w-full h-full bg-repeat" style="background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjMzMzIj48L3JlY3Q+CjxwYXRoIGQ9Ik0wIDVMNSAwWk02IDRMNCA2Wk0tMSAxTDEgLTFaIiBzdHJva2U9IiMxMTEiIHN0cm9rZS13aWR0aD0iMSI+PC9wYXRoPgo8L3N2Zz4=');"></div>
+        </div>
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-yellow-500 mb-6 font-bebas tracking-wide">READY TO TRANSFORM YOUR LIFE?</h2>
+            <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                Join thousands of high achievers who've unlocked their potential with our digital products.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="#products" class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-4 px-8 rounded-lg transition duration-300 transform hover:scale-105 text-center pulse-glow">
+                    SHOP NOW <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+                <a href="#contact" class="border-2 border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-black font-bold py-4 px-8 rounded-lg transition duration-300 text-center">
+                    GET IN TOUCH
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-yellow-500 mb-4 font-bebas tracking-wide">GET IN TOUCH</h2>
+                <div class="w-24 h-1 bg-yellow-500 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+                    Have questions? Our support team is here to help 24/7.
+                </p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-gray-400 mb-2">Your Name</label>
+                            <input type="text" id="name" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-yellow-500">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-400 mb-2">Email Address</label>
+                            <input type="email" id="email" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-yellow-500">
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-gray-400 mb-2">Subject</label>
+                            <input type="text" id="subject" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-yellow-500">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-400 mb-2">Message</label>
+                            <textarea id="message" rows="5" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-yellow-500"></textarea>
+                        </div>
+                        <button type="submit" class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-6 rounded-lg transition duration-300 w-full">
+                            SEND MESSAGE <i class="fas fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <div class="bg-gray-800 p-8 rounded-lg h-full">
+                        <h3 class="text-2xl font-bold text-yellow-500 mb-6">CONTACT INFORMATION</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="text-yellow-500 text-xl mr-4 mt-1">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-yellow-500 mb-1">Address</h4>
+                                    <p class="text-gray-400">123 Success Avenue, Motivation City, MC 90210</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="text-yellow-500 text-xl mr-4 mt-1">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-yellow-500 mb-1">Email</h4>
+                                    <p class="text-gray-400">support@unstoppablemotiv.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="text-yellow-500 text-xl mr-4 mt-1">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-yellow-500 mb-1">Phone</h4>
+                                    <p class="text-gray-400">+1 (555) 123-4567</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <h4 class="font-bold text-yellow-500 mb-4">FOLLOW US</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="bg-gray-700 hover:bg-yellow-500 text-white hover:text-black w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="bg-gray-700 hover:bg-yellow-500 text-white hover:text-black w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="bg-gray-700 hover:bg-yellow-500 text-white hover:text-black w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="bg-gray-700 hover:bg-yellow-500 text-white hover:text-black w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="bg-gray-700 hover:bg-yellow-500 text-white hover:text-black w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-16 bg-gray-800">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-2xl md:text-3xl font-bold text-yellow-500 mb-4 font-bebas tracking-wide">JOIN OUR NEWSLETTER</h2>
+            <p class="text-gray-300 mb-8 max-w-2xl mx-auto">
+                Get exclusive content, early access to new products, and motivational tips straight to your inbox.
+            </p>
+            <div class="max-w-md mx-auto flex">
+                <input type="email" placeholder="Your email address" class="flex-grow bg-gray-700 border border-gray-600 rounded-l-lg px-4 py-3 text-white focus:outline-none focus:border-yellow-500">
+                <button class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-6 rounded-r-lg transition duration-300">
+                    SUBSCRIBE <i class="fas fa-paper-plane ml-2"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <div class="flex items-center mb-4">
+                        <div class="text-gold-500 mr-2">
+                            <i class="fas fa-fire text-yellow-500 text-2xl"></i>
+                        </div>
+                        <a href="#" class="text-2xl font-bold text-yellow-500 font-bebas tracking-wider">UNSTOPPABLE MOTIV</a>
+                    </div>
+                    <p class="text-gray-400 max-w-xs">
+                        Digital products for mindset mastery, discipline, and financial freedom.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h3 class="text-lg font-bold text-yellow-500 mb-4">Products</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300">All Products</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300">Bestsellers</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300">New Releases</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300">Bundles</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-yellow-500 mb-4">Company</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300">About Us</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300">Success Stories</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300">Blog</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-yellow-500 mb-4">Support</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300">Contact Us</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300">FAQs</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300">Refund Policy</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 mb-4 md:mb-0">
+                    &copy; 2023 UNSTOPPABLE MOTIV. All rights reserved.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-500 hover:text-yellow-500 transition duration-300">
+                        <i class="fab fa-cc-visa text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-yellow-500 transition duration-300">
+                        <i class="fab fa-cc-mastercard text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-yellow-500 transition duration-300">
+                        <i class="fab fa-cc-paypal text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-yellow-500 transition duration-300">
+                        <i class="fab fa-cc-stripe text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-yellow-500 text-black w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition duration-300 opacity-0 invisible hover:bg-yellow-600">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Back to Top Button
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Product card animation on scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fadeIn');
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.product-card').forEach(card => {
+            observer.observe(card);
+        });
+        
+        // Typewriter effect
+        function setupTypewriter() {
+            const elements = document.querySelectorAll('.typewriter');
+            elements.forEach(el => {
+                const text = el.textContent;
+                el.textContent = '';
+                let i = 0;
+                const typing = setInterval(() => {
+                    if (i < text.length) {
+                        el.textContent += text.charAt(i);
+                        i++;
+                    } else {
+                        clearInterval(typing);
+                        el.style.borderRight = 'none';
+                    }
+                }, 100);
+            });
+        }
+        
+        // Initialize after page load
+        window.addEventListener('load', () => {
+            setupTypewriter();
+            
+            // Add animation class to hero image after typewriter finishes
+            setTimeout(() => {
+                document.querySelector('.float-animation').classList.add('animate__animated', 'animate__fadeInRight');
+            }, 3500);
+        });
+    </script>
+</body>
+</html>
