@@ -1,6 +1,3 @@
-# WEBSITE-0.1
-A modern, responsive landing page for "UNSTOPPABLE MOTIV"—a digital products brand focused on mindset mastery, discipline, and financial freedom.
-
 # 🔥 Unstoppable Motiv
 
 A sleek, conversion-focused landing page template designed for digital products, personal development coaches, and online creators. 
